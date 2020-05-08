@@ -6,8 +6,8 @@ from calc_need.calc import Calc
 
 @allure.feature("计算器")
 class TestCalc:
-    @allure.step('实例化Calc')
     @pytest.fixture()
+    @allure.step('实例化Calc')
     def test_sl_calc(self):
         self.calc = Calc()
 
