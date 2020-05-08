@@ -3,7 +3,6 @@ import pytest
 
 from calc_need.calc import Calc
 
-
 @allure.feature("计算器")
 class TestCalc:
     @allure.story('加法')
