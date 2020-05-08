@@ -1,0 +1,62 @@
+{
+  "name": "test_sub[0-11--11]",
+  "status": "passed",
+  "parameters": [
+    {
+      "name": "a",
+      "value": "0"
+    },
+    {
+      "name": "b",
+      "value": "11"
+    },
+    {
+      "name": "c",
+      "value": "-11"
+    }
+  ],
+  "start": 1588931025764,
+  "stop": 1588931025764,
+  "uuid": "a2c84484-a1fe-4fbf-968e-709f19240aa2",
+  "historyId": "982b874a9ed135550dde07e3b65c02f5",
+  "testCaseId": "2bb57f777ebcaec69fc17a083c04e039",
+  "fullName": "calc_test.TestCalc#test_sub",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "计算器"
+    },
+    {
+      "name": "story",
+      "value": "减法"
+    },
+    {
+      "name": "suite",
+      "value": "calc_test"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestCalc"
+    },
+    {
+      "name": "host",
+      "value": "LAPTOP-DQJ8MIT6"
+    },
+    {
+      "name": "thread",
+      "value": "32376-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "calc_test"
+    }
+  ]
+}
