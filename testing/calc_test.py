@@ -6,11 +6,10 @@ from test_data.data_logic import Yaml_data
 
 @allure.feature("计算器")
 class TestCalc:
-    with allure.step('实例化yaml_data'):
-        yaml_data_add = Yaml_data('../test_data/calc_test_add.yaml')
-        yaml_data_sub = Yaml_data('../test_data/calc_test_sub.yaml')
-        yaml_data_mul = Yaml_data('../test_data/calc_test_mul.yaml')
-        yaml_data_div = Yaml_data('../test_data/calc_test_div.yaml')
+    yaml_data_add = Yaml_data('../test_data/calc_test_add.yaml')
+    yaml_data_sub = Yaml_data('../test_data/calc_test_sub.yaml')
+    yaml_data_mul = Yaml_data('../test_data/calc_test_mul.yaml')
+    yaml_data_div = Yaml_data('../test_data/calc_test_div.yaml')
 
     @pytest.fixture()
     @allure.step('实例化Calc')
