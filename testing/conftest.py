@@ -1,11 +1,8 @@
-import allure
 import pytest
-
-from calc_need import calc
 from calc_need.calc import Calc
 
 
-@pytest.fixture()
-@allure.step('实例化Calc')
-def test_sl_calc(self):
-    self.calc = Calc()
+@pytest.fixture(scope='module')
+def sl_calc():
+    calc = Calc()
+    return calc
