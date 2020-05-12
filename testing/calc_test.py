@@ -21,11 +21,13 @@ class TestCalc:
     def test_add(self, test_sl_calc, num_one, num_two, expected):
         assert expected == self.calc.add(num_one, num_two)
 
+    @pytest.mark.run(order=3)
     @allure.story('除法')
     @pytest.mark.parametrize('num_one, num_two, expected', yaml_data_div.data)
     def test_div(self, test_sl_calc, num_one, num_two, expected):
         assert expected == self.calc.div(num_one, num_two)
 
+    @pytest.mark.run(order=1)
     @allure.story('减法')
     @pytest.mark.parametrize('num_one, num_two, expected', yaml_data_sub.data)
     def test_sub(self, test_sl_calc, num_one, num_two, expected):
