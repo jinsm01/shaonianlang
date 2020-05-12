@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+    <testsuite errors="0" failures="1" hostname="LAPTOP-DQJ8MIT6"
+               name="pytest" skipped="0" tests="25" time="0.194"
+               timestamp="2020-05-12T14:54:33.621228">
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="13" name="test_add[0-0-0]"
+                  time="0.001"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="13" name="test_add[0-11-11]"
+                  time="0.000"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="13" name="test_add[0.3-0.34-0.64]"
+                  time="0.002"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="13" name="test_add[-2--5--7]"
+                  time="0.001"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="13" name="test_add[-1-3-2]"
+                  time="0.000"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="19" name="test_add1[0-0-0]"
+                  time="0.002"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="19" name="test_add1[0-11-11]"
+                  time="0.002"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="19" name="test_add1[0.3-0.34-0.64]"
+                  time="0.003"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="19" name="test_add1[-2--5--7]"
+                  time="0.001"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="19" name="test_add1[-1-3-2]"
+                  time="0.000"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="25" name="test_sub[9-9-0]"
+                  time="0.000"/>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="25" name="test_sub[0-11--11]"
+                  time="0.002"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="25" name="test_sub[31-1-30]"
+                  time="0.002"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="25" name="test_sub[-2--5-3]"
+                  time="0.000"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="25" name="test_sub[0.4-0.2-0.2]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="31" name="test_mul[0-11-0]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="31" name="test_mul[1-11-11]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="31" name="test_mul[0.3-0.1-0.03]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="31" name="test_mul[-2--5-10]"
+                  time="0.002"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="31" name="test_mul[3-3-9]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="37" name="test_div[0-11-0]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="37" name="test_div[0.3-0.3-1]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="37" name="test_div[6-3-2]"
+                  time="0.001"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="37" name="test_div[23-2-11.5]"
+                  time="0.000"></testcase>
+        <testcase classname="calc_2_test.TestCalc" file="calc_2_test.py" line="37" name="test_div[0-0-\u5f02\u5e38]"
+                  time="0.003">
+            <failure message="AssertionError: assert &apos;异常&apos; == None
+  +&apos;异常&apos;
+  -None">self = &lt;testing.calc_2_test.TestCalc object at 0x000002BE98F3A710&gt;, sl_calc = &lt;calc_need.calc.Calc
+                object at 0x000002BE98F15240&gt;, num_one = 0
+                num_two = 0, expected = &apos;异常&apos;
+
+                @pytest.mark.div
+                @allure.story(&apos;除法&apos;)
+                @pytest.mark.parametrize(&apos;num_one, num_two, expected&apos;, yaml_data_div.data)
+                def test_div(self, sl_calc, num_one, num_two, expected):
+                &gt; assert expected == sl_calc.div(num_one, num_two)
+                E AssertionError: assert &apos;异常&apos; == None
+                E +&apos;异常&apos;
+                E -None
+
+                calc_2_test.py:42: AssertionError
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>
