@@ -2,6 +2,7 @@ import pytest
 from calc_need.calc import Calc
 from test_data.data_logic import Yaml_data
 
+
 @pytest.fixture(scope='module')
 def sl_calc():
     calc = Calc()
